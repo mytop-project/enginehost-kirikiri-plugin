@@ -31,7 +31,7 @@ answered true. Nothing else is executed, as before.
 
 ## 32-bit engines only on request, never published (2026-10-30)
 
-Official KiriKiri cores ship arm64-v8a and x86_64 only (Droidtop/tracker#646). For someone who needs a
+Official KiriKiri cores ship arm64-v8a and x86_64 only (mytop-project/tracker#646). For someone who needs a
 32-bit engine, the owner kept a way to build one: dispatch `android-plugin.yml` on the line with
 `include_32_bit` on. CI then also builds the `androidx32` dependency tree, checks its FFmpeg licence
 with the others, and gradle adds x86 (`-PPROP_APP_ABI=arm64-v8a:x86_64:x86`). The build ends as the
@@ -41,7 +41,7 @@ FFmpeg.
 
 ## Branches
 
-A core has only these branches (Droidtop/tracker#324, the owner, 2026-11-05):
+A core has only these branches (mytop-project/tracker#324, the owner, 2026-11-05):
 
 - `upstream-sync` follows upstream Kirikiroid2Yuri (`YuriSizuku/Kirikiroid2Yuri`). The daily
   `sync-upstream` workflow (on `plugin-core`) merges upstream's `yuri` into it; nothing of ours
